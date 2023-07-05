@@ -1,5 +1,3 @@
-// TODO: Importar el modelo y controladores de reservas, luego vincular rutas con controladores
-
 const router = require("express").Router();
 
 const {
@@ -21,7 +19,7 @@ router.get("/", (req, res) => {
 
 // Formulario para crear una reserva
 
-router.get("/reserva/crear", (req, res) => {
+router.get("crear-reserva", (req, res) => {
   res.render("reserva/crear_reserva");
 });
 
