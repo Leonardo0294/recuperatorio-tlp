@@ -62,8 +62,9 @@ ctrlReservas.crearReserva = async (req, res) => {
       nombre,
       apellido,
       email,
-      fecha,
       telefono,
+      codigo,
+      fecha,
     });
 
     if (!reserva) {

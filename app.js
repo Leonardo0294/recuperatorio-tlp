@@ -25,7 +25,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.set("view engine", "ejs");
+
 
 const port = process.env.PORT || 5000;
 
