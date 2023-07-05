@@ -9,6 +9,7 @@ const Reserva = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
+    
     nombre: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -24,6 +25,10 @@ const Reserva = sequelize.define(
     telefono: {
       type: DataTypes.INTEGER,
       allowNull: false,
+    },
+    codigo: {
+    type: DataTypes.STRING,
+    allowNull: false,
     },
     fecha: {
       type: DataTypes.DATEONLY,
