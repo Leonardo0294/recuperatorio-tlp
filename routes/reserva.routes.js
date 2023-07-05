@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
 // Formulario para crear una reserva
 
 router.get("/reserva/crear", (req, res) => {
-  res.render("reserva/crear_reserva");
+  res.render("reservas/crear-reserva");
 });
 
 // Formulario para actualizar una reserva

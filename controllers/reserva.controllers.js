@@ -63,7 +63,7 @@ ctrlReservas.crearReserva = async (req, res) => {
       apellido,
       email,
       telefono,
-      codigo,
+      codigo: new Date().getTime(),
       fecha,
     });
 

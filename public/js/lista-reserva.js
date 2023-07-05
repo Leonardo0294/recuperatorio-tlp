@@ -18,7 +18,10 @@ const mostrarReservas = (reservas, tablaElement) => {
             <td>${reserva.telefono}</td>
             <td>${reserva.codigo}</td>
             <td>${reserva.fecha}</td>
-            <td>${reserva.estado}</td>
+            <td>${reserva.paracuando}</td>
+            <td>${reserva.costo}</td>
+            <td>${reserva.origen}</td>
+            <td>${reserva.destino}</td>
             <td>
            <div class="row">
            <a href="/reserva/editar/${reserva.id}" class="btn btn-sm btn-warning">Editar</a>

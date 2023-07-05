@@ -9,7 +9,7 @@ const Reserva = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
-    
+
     nombre: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -27,17 +27,30 @@ const Reserva = sequelize.define(
       allowNull: false,
     },
     codigo: {
-    type: DataTypes.STRING,
-    allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     fecha: {
       type: DataTypes.DATEONLY,
       allowNull: false,
     },
-    estado: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
+    paracuando: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
     },
+    costo: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    origen: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
+    destino: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
+
     createdAt: {
       type: DataTypes.DATE,
       allowNull: false,
